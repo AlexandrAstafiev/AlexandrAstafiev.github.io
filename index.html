@@ -1,1 +1,307 @@
-"Hello World from 2024" 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — Астафьев Александр Владимирович</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/inter-font@3/css/inter.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#334155',
+                        accent: '#2563eb',
+                        light: '#f8fafc',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #cbd5e1;
+        }
+        @media (min-width: 768px) {
+            .timeline-line::before {
+                left: 50%;
+                margin-left: -1px;
+            }
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans text-secondary bg-light antialiased">
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-br from-slate-900 to-slate-800 text-white pt-20 pb-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')]"></div>
+        <div class="container mx-auto px-6 relative z-10 max-w-5xl">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white/10 border-4 border-white/20 flex items-center justify-center overflow-hidden shadow-2xl flex-shrink-0">
+                    <svg class="w-24 h-24 text-white/80" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                    </svg>
+                </div>
+                <div class="text-center md:text-left flex-1">
+                    <h1 class="text-3xl md:text-5xl font-bold mb-2 tracking-tight">Астафьев Александр Владимирович</h1>
+                    <p class="text-xl md:text-2xl text-blue-400 font-medium mb-4">Data Scientist / AI Engineer</p>
+                    <p class="text-slate-300 max-w-2xl mb-6 leading-relaxed">
+                        15+ лет опыта в разработке и внедрении интеллектуальных систем. Специализация: Computer Vision, обработка сигналов, LLM и RAG-системы. Автор 140+ публикаций, опыт руководства командами и привлечения грантов.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
+                        <a href="tel:+79209022375" class="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition duration-200">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            +7(920) 902-23-75
+                        </a>
+                        <a href="mailto:Alexandr.Astafiev@mail.ru" class="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition duration-200">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            Email
+                        </a>
+                        <a href="https://t.me/AlexandrAstafiev" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition duration-200">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                            Telegram
+                        </a>
+                    </div>
+                    <p class="mt-4 text-slate-400 text-sm">Муром, Владимирская область • Россия</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 max-w-5xl py-12 space-y-16">
+
+        <!-- Key Projects -->
+        <section class="fade-in">
+            <h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                Ключевые проекты
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition duration-300">
+                    <div class="text-accent font-semibold mb-2">2012 – 2015</div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Система распознавания маркировки слябов</h3>
+                    <p class="text-slate-600 mb-3">C#, Computer Vision, промышленное внедрение ООО «ВМЗ».</p>
+                    <span class="inline-block px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded">Компьютерное зрение</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition duration-300">
+                    <div class="text-accent font-semibold mb-2">2018 – 2025</div>
+                    <h3 class="text-lg font-bold text-primary mb-2">WiFi-позиционирование без датчиков</h3>
+                    <p class="text-slate-600 mb-3">Python, Signal Processing, ML. Позиционирование и распознавание движений.</p>
+                    <span class="inline-block px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded">Обработка сигналов</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition duration-300">
+                    <div class="text-accent font-semibold mb-2">с 2025</div>
+                    <h3 class="text-lg font-bold text-primary mb-2">LLM-ассистент с RAG</h3>
+                    <p class="text-slate-600 mb-3">Python, Django, AI, NLP. Интеграция больших языковых моделей для техподдержки.</p>
+                    <span class="inline-block px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded">LLM / RAG</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition duration-300">
+                    <div class="text-accent font-semibold mb-2">с 2026</div>
+                    <h3 class="text-lg font-bold text-primary mb-2">Онлайн-лаборатория по ИБ с AI-агентами</h3>
+                    <p class="text-slate-600 mb-3">Python, Django, AI, Crew AI, HuggingFace. Обучение ИБ с элементами AI-агентов.</p>
+                    <span class="inline-block px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded">AI Agents</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline -->
+        <section class="fade-in">
+            <h2 class="text-2xl font-bold text-primary mb-8 flex items-center gap-2">
+                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                Опыт работы
+            </h2>
+            <div class="relative timeline-line space-y-12">
+                <!-- Item 1 -->
+                <div class="relative md:flex items-center justify-between group">
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-12 h-12 bg-white border-4 border-accent rounded-full flex items-center justify-center z-10 shadow-lg">
+                        <div class="w-3 h-3 bg-accent rounded-full"></div>
+                    </div>
+                    <div class="ml-16 md:ml-0 md:w-5/12 bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div class="text-sm text-accent font-bold mb-1">Январь 2011 — настоящее время</div>
+                        <h3 class="text-xl font-bold text-primary mb-1">Муромский институт (филиал) ВлГУ</h3>
+                        <p class="text-slate-500 font-medium mb-4">Ведущий научный сотрудник / доцент / инженер</p>
+                        <ul class="space-y-3 text-slate-600 text-sm leading-relaxed">
+                            <li class="flex gap-2"><span class="text-accent mt-1">•</span> <span><strong>Внедрение СТЗ:</strong> Система автоматической идентификации маркировки слябов на ООО «Выксунский металлургический завод» (8 серверов, 16 камер, реальное время).</span></li>
+                            <li class="flex gap-2"><span class="text-accent mt-1">•</span> <span><strong>ЭП и казначейские системы:</strong> 12+ лет сопровождения гос. ИС, инфраструктура ЭП (10+ подписей), поддержка 12 АРМ и ключевых систем закупок и документооборота.</span></li>
+                            <li class="flex gap-2"><span class="text-accent mt-1">•</span> <span><strong>Научная работа:</strong> Автор 140+ публикаций (40+ WoS/Scopus, 15+ ВАК), 17+ свидетельств о регистрации ПО. Тех. рецензент международных журналов. Победитель 5 грантовых конкурсов.</span></li>
+                            <li class="flex gap-2"><span class="text-accent mt-1">•</span> <span><strong>Руководство:</strong> Более 30 ВКР бакалавров и магистров. Студенты — победители «УМНИК», «IT-Планета», «Я — профессионал».</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="relative md:flex items-center justify-between group flex-row-reverse">
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-12 h-12 bg-white border-4 border-slate-300 rounded-full flex items-center justify-center z-10 shadow-lg">
+                        <div class="w-3 h-3 bg-slate-300 rounded-full"></div>
+                    </div>
+                    <div class="ml-16 md:ml-0 md:w-5/12 bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div class="text-sm text-accent font-bold mb-1">Направления исследований</div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Цифровая обработка сигналов & AI</h3>
+                        <ul class="space-y-3 text-slate-600 text-sm leading-relaxed">
+                            <li class="flex gap-2"><span class="text-accent mt-1">•</span> <span><strong>WiFi CSI:</strong> Анализ многомерных сигналов (канальные матрицы до 3x3x114) для позиционирования и распознавания движений без нательных устройств.</span></li>
+                            <li class="flex gap-2"><span class="text-accent mt-1">•</span> <span><strong>LLM & RAG:</strong> ИИ-ассистент техподдержки Ред ОС, разработка retrieval pipelines, работа с документацией.</span></li>
+                            <li class="flex gap-2"><span class="text-accent mt-1">•</span> <span><strong>Преподавание:</strong> Сети, ИБ, коллективная разработка ПО, ИТ-экономика, учебно-исследовательские проекты.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="fade-in">
+            <h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                Образование и квалификация
+            </h2>
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="p-6 border-b border-slate-100">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary">Кандидат наук</h3>
+                            <p class="text-slate-500">05.13.01 Системный анализ</p>
+                        </div>
+                        <span class="text-sm font-semibold text-accent bg-blue-50 px-3 py-1 rounded-full self-start md:self-auto">2015</span>
+                    </div>
+                    <p class="text-slate-600 mt-2 text-sm">Владимирский государственный университет им. А.Г. и Н.Г. Столетовых</p>
+                </div>
+                <div class="p-6 border-b border-slate-100 bg-slate-50">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary">Доцент</h3>
+                            <p class="text-slate-500">2.3.6. «Методы и системы защиты информации, информационная безопасность»</p>
+                        </div>
+                        <span class="text-sm font-semibold text-accent bg-blue-50 px-3 py-1 rounded-full self-start md:self-auto">2024</span>
+                    </div>
+                    <p class="text-slate-600 mt-2 text-sm">Владимирский государственный университет им. А.Г. и Н.Г. Столетовых</p>
+                </div>
+                <div class="p-6 grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-bold text-primary">Высшее образование (IT)</h3>
+                        <p class="text-slate-600 text-sm mt-1">Информатик-аналитик в сфере сервиса</p>
+                        <p class="text-slate-400 text-xs mt-1">МиВлГУ, 2011</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-primary">Высшее образование (Экономика)</h3>
+                        <p class="text-slate-600 text-sm mt-1">Экономика и управление на предприятии</p>
+                        <p class="text-slate-400 text-xs mt-1">МиВлГУ, 2012</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-slate-50 border-t border-slate-100">
+                    <h4 class="font-semibold text-primary mb-3">Повышение квалификации</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-slate-700">Кибербезопасность (Сбер)</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-slate-700">Инжиниринг данных (Сбер)</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-slate-700">Преподавание (Иннополис)</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs text-slate-700">Преподавание ИБ (Positive Technologies)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="fade-in">
+            <h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                Стек технологий
+            </h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg font-medium text-sm">Python</span>
+                <span class="px-4 py-2 bg-yellow-50 text-yellow-700 rounded-lg font-medium text-sm">ML / Data Processing</span>
+                <span class="px-4 py-2 bg-red-50 text-red-700 rounded-lg font-medium text-sm">Deep Learning (Keras)</span>
+                <span class="px-4 py-2 bg-green-50 text-green-700 rounded-lg font-medium text-sm">Computer Vision (OpenCV, YOLO, OCR)</span>
+                <span class="px-4 py-2 bg-purple-50 text-purple-700 rounded-lg font-medium text-sm">LLM (GigaChat, OpenAI, HuggingFace)</span>
+                <span class="px-4 py-2 bg-indigo-50 text-indigo-700 rounded-lg font-medium text-sm">RAG / AI Agents (CrewAI)</span>
+                <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg font-medium text-sm">ЦОС (WiFi CSI, RSSI)</span>
+                <span class="px-4 py-2 bg-orange-50 text-orange-700 rounded-lg font-medium text-sm">SQL / Power BI</span>
+                <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg font-medium text-sm">Git / GitHub</span>
+                <span class="px-4 py-2 bg-cyan-50 text-cyan-700 rounded-lg font-medium text-sm">Django</span>
+            </div>
+        </section>
+
+        <!-- Resources Table -->
+        <section class="fade-in">
+            <h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                Материалы и ресурсы
+            </h2>
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 border-b border-slate-200 text-slate-600 text-sm uppercase tracking-wider">
+                            <th class="p-4 font-semibold">Лекция «Обзор ИИ»</th>
+                            <th class="p-4 font-semibold">Лекция «ИИ для статей»</th>
+                            <th class="p-4 font-semibold">RAG ИИ-ассистент</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-600">
+                        <tr>
+                            <td class="p-4 border-t border-slate-100 align-top">
+                                <span class="inline-block w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+                                Обзор современных подходов и инструментов ИИ.
+                            </td>
+                            <td class="p-4 border-t border-slate-100 align-top">
+                                <span class="inline-block w-2 h-2 rounded-full bg-blue-500 mr-2"></span>
+                                Применение LLM для написания и анализа научных статей.
+                            </td>
+                            <td class="p-4 border-t border-slate-100 align-top">
+                                <span class="inline-block w-2 h-2 rounded-full bg-purple-500 mr-2"></span>
+                                Демонстрация работы RAG-системы и ассистента техподдержки.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-12">
+        <div class="container mx-auto px-6 max-w-5xl text-center">
+            <p class="mb-4 text-lg text-white font-medium">Готов к сотрудничеству и новым проектам</p>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="tel:+79209022375" class="hover:text-white transition duration-200">Телефон</a>
+                <a href="mailto:Alexandr.Astafiev@mail.ru" class="hover:text-white transition duration-200">Email</a>
+                <a href="https://t.me/AlexandrAstafiev" class="hover:text-white transition duration-200">Telegram</a>
+            </div>
+            <p class="text-sm opacity-60">&copy; 2026 Астафьев А.В. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
